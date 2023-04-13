@@ -1,0 +1,507 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url(../fonts/MullerRegular.woff2) format("woff2"),
+    url(../fonts/MullerRegular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Light"), url(../fonts/MullerLight.woff2) format("woff2"),
+    url(../fonts/MullerLight.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Bold"), url(../fonts/MullerBold.woff2) format("woff2"),
+    url(../fonts/MullerBold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Medium"), url(../fonts/MullerMedium.woff2) format("woff2"),
+    url(../fonts/MullerMedium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  min-width: 1200px;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+  background-color: #f1f1f1;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #333333;
+}
+
+.section-offset {
+  padding-bottom: 70px;
+}
+
+/*header*/
+.header {
+  padding: 30px 0 70px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.header-container {
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.phone-number {
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+  color: #666666;
+}
+
+.personal-account {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #cc9933;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 21px 12px;
+  padding-left: 28px;
+}
+
+.account-icon {
+  background-image: url(../img/keyboard_tab.svg);
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-nav {
+  padding: 13px 45px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+/*nav*/
+.nav-list {
+  margin: 0;
+  margin-right: 114px;
+  align-items: center;
+}
+
+.header-list-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #666666;
+}
+
+.nav-btn {
+  max-width: 177px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 19px;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  color: #cc9933;
+}
+
+.nav-btn:nth-child(2n) {
+  margin-right: 40px;
+}
+
+/*hero*/
+.hero {
+  padding-bottom: 70px;
+}
+
+.hero-container {
+  max-width: 1170px;
+}
+
+.hero-block {
+  flex-direction: column;
+  min-width: 573px;
+}
+
+.hero-block:not(:last-child) {
+  margin-right: 24px;
+}
+
+.offers-card {
+  max-width: 573px;
+  margin-bottom: 24px;
+  padding: 40px 0 40px 45px;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.offers-card-third {
+  padding: 212px 0 40px 45px;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.offers-card:last-child {
+  margin-bottom: 0;
+}
+
+.offers-title {
+  overflow-wrap: normal;
+  max-width: 420px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.offers-title-third {
+  overflow-wrap: normal;
+  max-width: 299px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.offers-descr {
+  margin: 0;
+  margin-bottom: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.offers-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  background-image: url(../img/rectangle-2.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 15px;
+  color: #f0bf5f;
+}
+
+.pic-1 {
+  background-image: url(../img/image-1.jpg);
+}
+
+.pic-2 {
+  background-image: url(../img/image-2.jpg);
+}
+
+.pic-3 {
+  background-image: url(../img/image-3.jpg);
+}
+
+/*us*/
+.us-container {
+  max-width: 888px;
+  min-height: 192px;
+}
+
+.us-descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+/*services*/
+.services-items {
+  flex-wrap: wrap;
+}
+
+.services-item {
+  background-repeat: no-repeat;
+  max-width: 570px;
+  min-height: 330px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.services-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.services-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  background-image: url(../img/rectangle-3.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 15px;
+  color: #cc9933;
+}
+
+.services-item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
+.services-descr {
+  padding: 191px 126px 35px 45px;
+}
+
+.photo-1 {
+  background-image: url(../img/photo-1.jpg);
+}
+
+.photo-2 {
+  background-image: url(../img/photo-2.jpg);
+}
+
+.photo-3 {
+  background-image: url(../img/photo-3.jpg);
+}
+
+.photo-4 {
+  background-image: url(../img/photo-4.jpg);
+}
+
+/*benefits*/
+.benefits-items {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.benefits-icon {
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.benefits-cards {
+  max-width: 276px;
+  min-height: 276px;
+  margin-bottom: 22px;
+  padding: 40px 42px 32px 45px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.benefits-cards:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+.card-text {
+  margin: 0;
+  padding-top: 76px;
+  max-width: 189px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.icon-bathtub {
+  background-image: url(../img/bathtub.svg);
+}
+
+.icon-hanger {
+  background-image: url(../img/hanger.svg);
+}
+
+.icon-heating {
+  background-image: url(../img/heating.svg);
+}
+
+.icon-hotelkey {
+  background-image: url(../img/hotel-key.svg);
+}
+
+.icon-parking {
+  background-image: url(../img/parking.svg);
+}
+
+.icon-reception {
+  background-image: url(../img/reception.svg);
+}
+
+.icon-securitybox {
+  background-image: url(../img/security-box.svg);
+}
+
+.icon-swimmingpool {
+  background-image: url(../img/swimming-pool.svg);
+}
+
+/*location*/
+.location-items {
+  flex-wrap: wrap;
+}
+
+.location-card {
+  min-width: 374px;
+  min-height: 440px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.location-card:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+
+.location-rating {
+  display: inline-block;
+  margin: 0 52px 16px 0;
+}
+
+.location-ninth {
+  position: relative;
+  background-image: url(../img/loc-photo-9.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.location-place {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.location-descr {
+  margin: 0;
+  padding: 32px 45px;
+}
+
+.location-rating-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.location-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.location-star {
+  display: inline-block;
+  margin: 0;
+}
+
+.location-button {
+  display: block;
+  max-width: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 20px;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  color: #cc9933;
+}
+
+.location-btn {
+  position: absolute;
+  left: 54px;
+  bottom: 27px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  background-image: url(../img/rectangle-4.svg);
+  background-repeat: no-repeat;
+  padding-right: 16px;
+  background-position: right center;
+  color: #fff;
+}
